@@ -24,7 +24,8 @@ jobs:
 
       - name: Run PyWebIO app (for testing)
         run: |
-          python main.py  # Replace with the necessary command to start your app
+          nohup python app.py &
+          echo "App is running in the background."
 
       # Optionally, deploy to your server or cloud service here
       # e.g., use SCP, SSH, or Docker commands to deploy your app to a remote server
