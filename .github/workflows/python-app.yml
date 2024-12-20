@@ -24,7 +24,7 @@ jobs:
 
       - name: Run PyWebIO app (for testing)
         run: |
-          nohup python app.py &
+          nohup python main.py &
           echo "App is running in the background."
 
       # Optionally, deploy to your server or cloud service here
